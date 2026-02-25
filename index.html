@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вопросы вдвоём</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Вопросы вдвоём (локально)</h1>
+
+    <div id="setup" class="card">
+      <input type="text" id="my-nick" placeholder="Твой никнейм..." maxlength="20">
+      <button id="start">Начать отвечать</button>
+    </div>
+
+    <div id="main" class="hidden">
+      <div class="header">
+        <h2 id="my-name-display"></h2>
+        <button id="clear-my">Очистить мои ответы</button>
+      </div>
+
+      <div class="questions-section">
+        <h3>Вопросы</h3>
+        <div id="questions-list"></div>
+      </div>
+
+      <div class="answers-section">
+        <h3>Ответы всех</h3>
+        <div id="answers-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
